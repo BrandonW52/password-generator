@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a <span>random password</span></h1>
+      <h3>May your only insecurities be your own</h3>
+      <div class="slider-container">
+        <input
+          type="range"
+          min="8"
+          max="32"
+          value="16"
+          class="#"
+          id="passwordRange"
+        />
+        <span id="sliderNum">16</span>
+      </div>
+      <button>Generate password</button>
+    </div>
+
+    <div>
+      <!-- The text field -->
+      <input type="text" value="#" id="myInput" />
+
+      <!-- The button used to copy the text -->
+      <button onclick="copyOnClick()">📋</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
