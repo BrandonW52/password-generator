@@ -23,3 +23,10 @@ function copyOnClick() {
   // Alert the copied text
   alert("Copied the text: " + copyPassword.value);
 }
+
+// All of cause of Prettier
+const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+const numbers = "1234567890".split("");
+const symbols = "~`!@#$%^&*()_-+={[}],|:;<>.?/".split("");
+// -------------------------------------------------------
+const characters = [alphabet + numbers + symbols];
