@@ -37,36 +37,15 @@ function generatePassword() {
   let passwordlength = slider.value;
   let password = "";
 
+  // Displays it
+  let text = document.getElementById("passwordOut");
+
   for (let i = 1; i <= passwordlength; i++) {
     let char = Math.floor(Math.random() * characters.length + 1);
 
     password += characters.charAt(char);
-    console.log(password);
   }
+  // Displays it
+  text.value = password;
   return password;
 }
-
-// Chat gpt eww gross (it does work tho)
-// document
-//   .getElementById("generateButton")
-//   .addEventListener("click", function () {
-//     let passwordLength = 10; // specify your desired password length
-//     let characters =
-//       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; // specify the characters to include in the password
-//     let password = generatePassword(passwordLength, characters);
-//     let text = document.getElementById("passwordOut");
-//     text.value = password;
-//   });
-
-// function generatePassword(length, chars) {
-//   let password = "";
-//   for (let i = 0; i < length; i++) {
-//     let char = Math.floor(Math.random() * chars.length);
-//     password += chars.charAt(char);
-//   }
-//   return password;
-// }
-
-// Displays the generated password
-let text = document.getElementById("passwordOut");
-text.value = generatePassword();
