@@ -30,17 +30,18 @@ const alphabetUpper = alphabetLower.toUpperCase();
 const numbers = "1234567890";
 const symbols = "~`!@#$%^&*()_-+={[}],|:;<>.?/";
 // ------------------------------------------------
-
-let passwordlength = slider.value;
-let password = "";
 let characters = alphabetUpper + alphabetLower + numbers + symbols;
 
 //Generates the password
 function generatePassword() {
+  let passwordlength = slider.value;
+  let password = "";
+
   for (let i = 1; i <= passwordlength; i++) {
     let char = Math.floor(Math.random() * characters.length + 1);
 
     password += characters.charAt(char);
+    console.log(password);
   }
   return password;
 }
@@ -67,5 +68,5 @@ function generatePassword() {
 // }
 
 // Displays the generated password
-// let text = document.getElementById("passwordOut");
-// text.value = generatePassword();
+let text = document.getElementById("passwordOut");
+text.value = generatePassword();
