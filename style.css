@@ -1,0 +1,108 @@
+:root {
+  --accent-color: #10b981;
+  --complementary-color: #d5d4d8;
+  --container-color: #273549;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--container-color);
+  padding: 80px 40px;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 8px;
+  > span {
+    color: var(--accent-color);
+  }
+}
+
+p {
+  color: var(--complementary-color);
+  margin-top: 0px;
+}
+
+.slider-length {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.slider-length::-webkit-slider-runnable-track {
+  height: 1em;
+  background: var(--complementary-color);
+  border-radius: 16px;
+}
+
+.slider-length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1em;
+  width: 1em;
+  background-color: var(--complementary-color);
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  box-shadow: -407px 0 0 400px var(--accent-color);
+}
+
+#sliderNum {
+  color: var(--accent-color);
+}
+
+.generate {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: white;
+  font-weight: 800;
+  background-color: var(--accent-color);
+  margin: 16px 0px;
+}
+
+#passwordOut {
+  background-color: var(--container-color);
+  color: var(--accent-color);
+  font-size: 16px;
+  width: 20em;
+  border-style: none none solid none;
+  border-color: var(--complementary-color);
+}
+
+.copy {
+  color: var(--complementary-color);
+  font-size: 1.25em;
+  border: none;
+  background-color: var(--container-color);
+
+  transition: ease-out 0.3s;
+}
+
+.copy:hover {
+  background-color: var(--complementary-color);
+  color: var(--container-color);
+  border-radius: 4px;
+}
+
+.copy:active {
+  color: var(--container-color);
+  background-color: var(--accent-color);
+}

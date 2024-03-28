@@ -19,9 +19,6 @@ function copyOnClick() {
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyPassword.value);
-
-  // Alert the copied text
-  alert("Copied the text: " + copyPassword.value);
 }
 
 // All of cause of Prettier

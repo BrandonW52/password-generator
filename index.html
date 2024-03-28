@@ -8,28 +8,31 @@
   </head>
   <body>
     <div class="container">
-      <h1>Generate a <span>random password</span></h1>
-      <h3>May your only insecurities be your own</h3>
+      <h1>
+        Generate a
+        <br />
+        <span>random password</span>
+      </h1>
+      <p>May your only insecurities be your own</p>
       <div class="slider-container">
         <input
           type="range"
           min="8"
           max="32"
           value="16"
-          class="#"
+          class="slider-length"
           id="passwordRange"
         />
         <span id="sliderNum">16</span>
       </div>
-      <button onclick="generatePassword()">Generate password</button>
-    </div>
+      <button class="generate" onclick="generatePassword()">
+        Generate password
+      </button>
 
-    <div>
-      <!-- The text field -->
-      <input type="text" value="" id="passwordOut" />
-
-      <!-- The button used to copy the text -->
-      <button onclick="copyOnClick()">📋</button>
+      <div>
+        <input type="text" value="" id="passwordOut" />
+        <button class="copy" onclick="copyOnClick()">📋</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
